@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adelle_rgregular';
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adelle_rgregular';
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'proxima_nova_rgregular', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 12vh;
+  border-bottom: 1px solid #F1F1F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+header .left-side {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .left-side .search {
+  width: 46%;
+  position: relative;
+}
+
+header .left-side .search input {
+  border-radius: 30px;
+  background-color: #F1F1F5;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 8px 14px 8px 24px;
+}
+
+header .left-side .search i {
+  position: absolute;
+  left: 10px;
+  z-index: 44;
+  top: 10px;
+  font-size: 10px;
+  color: #616173;
+}
+
+header .right-side {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+}
+
+header .right-side ul {
+  width: 59%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .right-side ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .right-side ul li .nine {
+  background: #F9C20A;
+  border-radius: 27px;
+  color: #000;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -7px;
+  font-size: 10px;
+  font-weight: bold;
+  right: -13px;
+}
+
+header .right-side ul .line {
+  width: 1px;
+  height: 41px;
+  background-color: #E6E6E6;
+}
+
+header .right-side .user-logout {
+  width: 36%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .right-side .user-logout h1 {
+  font-weight: bold;
+}
+
+header .right-side .user-logout p {
+  color: #616173;
+}
+
+.wrapper {
+  width: 100%;
+  height: 88vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .sidebar {
+  width: 9%;
+  height: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper .sidebar ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 8px;
+}
+
+.wrapper .sidebar ul li {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #D4D8E2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color: #FAA61A;
+}
+
+.wrapper .sidebar ul li img {
+  width: 42%;
+  height: 42%;
+}
+
+.wrapper .sidebar ul li.active {
+  background-color: #FAA61A !important;
+}
+
+.wrapper .sidebar ul p {
+  color: #616173;
+  font-size: 12px;
+  position: absolute;
+  bottom: -13px;
+  display: block;
+  width: 17vh;
+  text-align: center;
+}
+
+.wrapper .main {
+  width: 91%;
+  height: 100%;
+}
+
+.wrapper .main .top-sec {
+  width: 100%;
+  height: 10vh;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .main .top-sec .label {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .main .top-sec .label a {
+  color: #000;
+}
+
+.wrapper .main .top-sec .label .circle {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 9px;
+  border: 1px solid #FAA61A;
+  color: #FAA61A;
+  border-radius: 15px;
+  margin-left: 5px;
+}
+
+.wrapper .main .bottom-sec {
+  width: 100%;
+  height: 78vh;
+  background-color: #F5F5F5;
+  background-image: url("../img/bg-logo.svg");
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
+.wrapper .main .bottom-sec .all {
+  width: 67%;
+  height: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+
+.wrapper .main .bottom-sec .head h1 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.wrapper .main .bottom-sec .currency {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  border: 1px solid #E7E7E7;
+  border-radius: 48px;
+}
+
+.wrapper .main .bottom-sec .currency .xc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px 17px;
+}
+
+.wrapper .main .bottom-sec .currency .xc p {
+  color: #616173;
+}
+
+.wrapper .main .bottom-sec .currency .xc span {
+  color: #616173;
+}
+
+.wrapper .main .bottom-sec .currency button {
+  outline: none;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  -webkit-box-shadow: 0px 2px 4px rgba(97, 97, 115, 0.15);
+          box-shadow: 0px 2px 4px rgba(97, 97, 115, 0.15);
+  border-radius: 48px;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+
+.wrapper .main .bottom-sec .table {
+  margin: 0 auto;
+  width: 67%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding-bottom: 7px;
+}
+
+.wrapper .main .bottom-sec .table table {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .main .bottom-sec .table table thead {
+  height: 50px;
+}
+
+.wrapper .main .bottom-sec .table table th {
+  color: #9696AA;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.wrapper .main .bottom-sec .table table th:nth-last-child(1) {
+  text-align: end;
+}
+
+.wrapper .main .bottom-sec .table table tr {
+  text-align: center;
+}
+
+.wrapper .main .bottom-sec .table table td {
+  border-top: 1px solid #F5F5F5;
+  color: #474C54;
+  padding: 5px 0;
+}
+
+.wrapper .main .bottom-sec .table table td:nth-last-child(2) {
+  text-align: end;
+}
+/*# sourceMappingURL=style.css.map */

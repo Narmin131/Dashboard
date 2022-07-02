@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/sass/style.css">
+</head>
+<body>
+    <header>
+        <div class="left-side">
+            <div class="logo">
+                <a href="">
+                    <img src="assets/img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="call">
+                <a href="">
+                    <img src="assets/img/call.svg" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <!-- <img src="assets/img/search.svg" alt=""> -->
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search" type="text">
+            </div>
+        </div>
+        <div class="right-side">
+            <ul>
+                <li>
+                   <a href=""> <img src="assets/img/i1.svg" alt=""></a>
+                </li>
+                <li>
+                   <a href=""> <img src="assets/img/i2.svg" alt=""></a>
+                </li>
+                <li>
+                   <a href=""> <img src="assets/img/i3.svg" alt=""></a>
+                </li>
+                <div class="line"></div>
+                <li>
+                    <a href=""> <img src="assets/img/i4.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""> <img src="assets/img/i5.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""> <img src="assets/img/i6.svg" alt=""></a>
+                   
+                </li>
+                <li>
+                    <a href=""> <img src="assets/img/i8.svg" alt=""></a>
+                    <div class="nine">9</div>
+                </li>
+            </ul>
+            <div class="user-logout">
+               <div class="user">
+                <h1>Ilya Davidoff</h1>
+                <p>Apple INC, Admin</p>
+               </div>
+                <a href=""><img src="assets/img/i9.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li>
+                   <img src="assets/img/s1.svg" alt=""> <p>Dashboard</p> 
+                </li>
+               
+                <li>
+                    <img src="assets/img/s2.svg" alt=""> 
+                    <p>Payments</p> 
+                 </li>
+                 <li>
+                    <img src="assets/img/s3.svg" alt=""> 
+                    <p>Payroll</p> 
+                 </li>
+                 <li>
+                    <img src="assets/img/s4.svg" alt=""> 
+                    <p>Templates</p> 
+                 </li>
+                 <li>
+                    <img src="assets/img/s5.svg" alt=""> 
+                    <p>History</p> 
+                 </li>
+                 <li class="active">
+                    <img src="assets/img/s6.svg" alt="" > 
+                    <p>Products</p> 
+                 </li>
+                 <li>
+                    <img src="assets/img/s7.svg" alt="">
+                    <p>Express POS</p>  
+                 </li>
+                 <li>
+                    <img src="assets/img/s8.svg" alt=""> 
+                    <p>Ani Pay</p> 
+                 </li>
+                 <li>
+                    <img src="assets/img/s9.svg" alt=""> 
+                    <p>Map</p> 
+                 </li>
+            </ul>
+        </div>
+    
+        <div class="main">
+            <div class="top-sec">
+                <div class="label">
+                    <a href="">На подпись</a>
+                    <div class="circle">
+                     5
+                    </div>
+                </div>
+                <div class="label">
+                    <a href="">Отправленные в банк</a>
+                    <div class="circle">
+                     25
+                    </div>
+                </div>
+                <div class="label">
+                    <a href="">Исполненные</a>
+                    <div class="circle">
+                     225
+                    </div>
+                </div>
+                <div class="label">
+                    <a href="">Отклоненные</a>
+                    <div class="circle">
+                     1524
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-sec">
+                <div class="all">
+
+                    <div class="head">
+                        <h1>Cards</h1>
+                    </div>
+                    <div class="currency">
+                        <button>All</button>
+                        <div class="xc">
+                            <p>USD</p>
+                            <span>$ 2 000 000</span>
+                        </div>
+                        <div class="xc">
+                            <p>RUR</p>
+                            <span>50 000 000 ₽</span>
+                        </div>
+                        <div class="xc">
+                            <p>AZN</p>
+                            <span>50 000 ₼</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>
+                            Kartın adı
+                            <img src="assets/img/filter.svg"  />
+                          </th>
+                          <th>Kartın nömrəsi</th>
+                          <th>Status</th>
+                          <th>Növü</th>
+                          <th>Bitmə tarixi</th>
+                          <th>Balans</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Classic Premium</td>
+                          <td>4353 54** **** 5465</td>
+                          <td>Aktiv</td>
+                          <td>
+                            <img src="assets/img/ms.svg"  />
+                          </td>
+                          <td>10/19</td>
+                          <td>20 500 000 ₼</td>
+                          <td>
+                            <img src="assets/img/dots.svg"  />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Classic Premium</td>
+                          <td>4353 54** **** 5465</td>
+                          <td>Aktiv</td>
+                          <td>
+                          <img src="assets/img/ms.svg"  />
+                          </td>
+                          <td>10/19</td>
+                          <td>20 500 000 ₼</td>
+                          <td>
+                            <img src="assets/img/dots.svg"  />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Classic Premium</td>
+                          <td>4353 54** **** 5465</td>
+                          <td>Aktiv</td>
+                          <td>
+                            <img src="assets/img/ms.svg"  />
+                          </td>
+                          <td>10/19</td>
+                          <td>20 500 000 ₼</td>
+                          <td><img src="assets/img/dots.svg"  />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Classic Premium</td>
+                          <td>4353 54** **** 5465</td>
+                          <td>Aktiv</td>
+                          <td>
+                            <img src="assets/img/ms.svg"  />
+                          </td>
+                          <td>10/19</td>
+                          <td>20 500 000 ₼</td>
+                          <td>
+                            <img src="assets/img/dots.svg"  />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Classic Premium</td>
+                          <td>4353 54** **** 5465</td>
+                          <td>Aktiv</td>
+                          <td>
+                            <img src="assets/img/ms.svg"  />
+                          </td>
+                          <td>10/19</td>
+                          <td>20 500 000 ₼</td>
+                          <td>
+                            <img src="assets/img/dots.svg"  />
+                          </td>
+                        </tr>
+                        <tr class="last">
+                          <td>Classic Premium</td>
+                          <td>4353 54** **** 5465</td>
+                          <td>Aktiv</td>
+                          <td>
+                            <img src="assets/img/ms.svg"  />
+                          </td>
+                          <td>10/19</td>
+                          <td>20 500 000 ₼</td>
+                          <td>
+                            <img src="assets/img/dots.svg"  />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

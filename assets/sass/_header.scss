@@ -1,0 +1,83 @@
+@import "mixin";
+
+body{
+	font-family: 'proxima_nova_rgregular', sans-serif;
+}
+header{
+    width: 100%;
+    height: 12vh;
+    border-bottom: 1px solid #F1F1F5;
+    @include between;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.9);
+    .left-side{
+        width: 50%;
+        height: 100%;
+        @include around;
+       .search{
+        width: 46%;
+        position: relative;
+        input{
+            border-radius: 30px;
+            background-color: #F1F1F5;
+            outline: none;
+            border: none;
+            width: 100%;
+            padding: 8px 14px 8px 24px;
+        }
+         i{
+            position: absolute;
+            left: 10px;
+            z-index: 44;
+            top: 10px;
+            font-size: 10px;
+            color: #616173;
+        }
+       }
+    }
+    .right-side{
+        width: 50%;
+        height: 100%;
+        @include between;
+        padding: 0 30px;
+       ul{
+          width:59%;
+          height: 100%;
+          @include between;
+          li{
+            @include center;
+            position: relative;
+            .nine{
+                background: #F9C20A;
+                border-radius: 27px;
+                color: #000;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                @include center;
+                top: -7px;
+                font-size: 10px;
+                font-weight: bold;
+                right: -13px;
+            }
+          }
+          .line{
+            width: 1px;
+            height: 41px;
+            background-color: #E6E6E6;
+            
+          }
+       }
+       .user-logout{
+        width: 36%;
+        height: 100%;
+        @include around;
+        h1{
+            font-weight: bold;
+        }
+        p{
+            color:  #616173;
+        }
+       }
+    }
+}

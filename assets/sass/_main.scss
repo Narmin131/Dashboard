@@ -1,0 +1,173 @@
+
+.wrapper{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+.sidebar{
+    width: 9%;
+    height: 100%;
+    background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+ul{
+    width: 100%;
+    height: 100%;
+    @include between;
+    flex-direction: column;
+    // padding: 6px 0;
+   padding-bottom: 20px ;
+   padding-top: 8px;
+    li{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #D4D8E2;
+        @include center;
+        transition: all .3s ease;
+        cursor: pointer;
+        position: relative;
+        &:hover{
+            background-color:  #FAA61A;
+        }
+        img{
+            width: 42%;
+            height: 42%;
+        }
+        &.active{
+            background-color: #FAA61A !important;
+        }
+    }
+    p{
+        color: #616173 ;
+        font-size: 12px;
+        position: absolute;
+        bottom: -13px;
+        display: block;
+        width: 17vh;
+        text-align: center;
+    }
+}
+} 
+
+
+.main{
+    width: 91%;
+    height: 100%;
+    .top-sec{
+        width: 100%;
+        height: 10vh;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+        @include around;
+        .label{
+            width: auto;
+            height: auto;
+            display: flex;
+            @include center;
+            a{
+                color: #000;
+            }
+            .circle{
+                width: auto;
+                height: auto;
+                @include center;
+                padding: 6px 9px;
+                border: 1px solid #FAA61A;
+                color: #FAA61A;
+                border-radius: 15px;
+                margin-left: 5px;
+            }
+        }
+    }
+    .bottom-sec{
+        width: 100%;
+        height: 78vh;
+        background-color: #F5F5F5;
+        background-image: url("../img/bg-logo.svg");
+        background-position:top right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        .all{
+            width: 67%;
+            height: auto;
+            margin: auto;
+            @include between;
+            padding-bottom: 10px;
+        }
+        .head{
+            h1{
+                font-weight: bold;
+                font-size: 24px;
+            }
+        }
+        .currency{
+            width: auto;
+            height: auto;
+            @include center;
+            border-radius: 15px;
+            border: 1px solid #E7E7E7;
+            border-radius: 48px;
+            .xc{
+               @include center;
+               flex-direction: column;
+               padding: 5px 17px;
+               p{
+                color: #616173;
+               }
+               span{
+                color: #616173;
+               }
+            }
+            button{
+                outline: none;
+                background: #FFFFFF;
+                border: 1px solid #E6E6E6;
+                box-shadow: 0px 2px 4px rgba(97, 97, 115, 0.15);
+                border-radius: 48px;
+                padding: 14px 20px;
+                cursor: pointer;
+            }
+        }
+         
+        .table{
+            margin: 0 auto;
+            width: 67%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            padding-bottom: 7px;
+            table{
+                width: 100%;
+                height: 100%;
+            thead{
+               height: 50px;
+            }
+            th{
+                color:  #9696AA;
+                margin-bottom: 10px;
+                font-size: 13px;
+                text-align: start;  
+                padding-left: 20px;   
+                &:nth-last-child(1)  {
+                    text-align: end;
+                }  
+            }
+            tr{
+                text-align: center;
+            }
+            td{
+                border-top: 1px solid #F5F5F5;
+                color: #474C54;
+                padding:5px 0;
+                &:nth-last-child(2) {
+                    text-align: end ;
+                  }
+            }
+         }  
+        }
+    }
+}
+}
+
+
+
+
